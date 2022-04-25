@@ -1,5 +1,4 @@
 const { JWT_SECRET } = require('../secrets/index.js')
-const { findBy } = require('../users/user-model')
 const jwt = require('jsonwebtoken')
 
 module.exports = (req, res, next) => {
