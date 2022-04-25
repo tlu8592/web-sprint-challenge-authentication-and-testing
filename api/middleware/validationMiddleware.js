@@ -26,7 +26,24 @@ async function checkUsernameTaken (req, res, next) {
     }
 }
 
+// async function checkUsernameDataExists (req, res, next) {
+//     try {
+//         const user = await User.findBy({ username: req.body.username })
+//         if (user.length) {
+//             req.user = user[0]
+//             next()
+//         } else {
+//             res.status(401).json({
+//                 message: "invalid credentials"
+//             })
+//         }
+//     } catch (err) {
+//         next(err)
+//     }
+// }
+
 module.exports = {
     checkMissingInputs,
-    checkUsernameTaken
+    checkUsernameTaken,
+    // checkUsernameDataExists
 }
