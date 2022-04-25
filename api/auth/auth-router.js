@@ -9,7 +9,6 @@ const {
 const User = require('../users/user-model')
 
 router.post('/register', checkMissingInputs, checkUsernameTaken, (req, res, next) => {
-  // res.end('implement register, please!');
   /*
     IMPLEMENT
     You are welcome to build additional middlewares to help with the endpoint's functionality.
@@ -48,7 +47,6 @@ router.post(
   '/login',
   checkMissingInputs, 
   (req, res, next) => {
-  // res.end('implement login, please!');
   /*
     IMPLEMENT
     You are welcome to build additional middlewares to help with the endpoint's functionality.
